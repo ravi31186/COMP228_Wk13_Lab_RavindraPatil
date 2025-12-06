@@ -55,7 +55,7 @@ public class Main extends Application {
 
                     Platform.runLater(() -> {
                         area.setText(sb.toString());
-                        area.appendText("\nNumbers saved to database.");
+                        area.appendText("Numbers saved to database.");
                     });
 
                 } catch (Exception e1) {

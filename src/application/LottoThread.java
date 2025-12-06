@@ -18,7 +18,7 @@ public class LottoThread extends Thread {
         Database.save(runNo, number);
 
         synchronized (sb) {
-            sb.append("Ball " + runNo + ": " + number + "\n");
+            sb.append("Ball " + runNo + ": " + number);
         }
     }
 }
