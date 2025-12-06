@@ -38,7 +38,6 @@ public class Main extends Application {
             StringBuilder sb = new StringBuilder();
             LottoGenerator gen = new LottoGenerator(min, max);
 
-            // create threads
             Thread[] list = new Thread[qty];
 
             for (int i = 0; i < qty; i++) {
@@ -46,7 +45,6 @@ public class Main extends Application {
                 list[i].start();
             }
 
-            // wait for all threads to finish
             Thread waitThread = new Thread(() -> {
                 try {
                     for (int i = 0; i < qty; i++) {
